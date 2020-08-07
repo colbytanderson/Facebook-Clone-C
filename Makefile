@@ -14,7 +14,7 @@ CFLAGS += -D_POSIX_C_SOURCE=199506L
 
 
 OUT = bin
-EXEC = $(OUT)/facebooc
+EXEC = $(OUT)/facebook
 OBJS = \
 	src/kv.o \
 	src/response.o \
@@ -41,7 +41,7 @@ $(EXEC): $(OBJS)
 
 all: $(EXEC)
 run: $(EXEC)
-	@echo "Starting Facebooc service..."
+	@echo "Starting facebook service..."
 	@./$(EXEC) $(port)
 
 clean:
